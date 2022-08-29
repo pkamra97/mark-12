@@ -18,14 +18,22 @@ function isTriangle(){
 // console.log(inputs[0].value,inputs[1].value,inputs[2].value);
 const total=calculateSum(Number(inputs[0].value) , Number(inputs[1].value) , Number(inputs[2].value));
 // console.log(total);
+// also not working in console.
+
 if(total===180)
 {
     console.log("The angles form a triangle");
+    // this is not visible in console 
+
+    // but this is working in main html page
     outputE1.innerText="The angles form a triangle";
 }
 else{
-    console.log("the angles don't form a triangle");
-    outputE1.innerText="the angles don't form a triangle";
+    console.log("The angles don't form a triangle");
+    // this is not visible in console 
+
+    // but this is working in main html page
+    outputE1.innerText="The angles don't form a triangle";
 }
 
 }
