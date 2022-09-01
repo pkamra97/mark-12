@@ -3,12 +3,12 @@ const isTriangleBtn=document.querySelector("#is-btn-triangle")
 const outputE1=document.querySelector("#output")
 
 // //doubt1
-// console.log(inputs);
-// console.log(inputs[0]);
+console.log(inputs);
+console.log(inputs[0]);
 function calculateSum(angle1,angle2,angle3)
 {
 const sum=angle1+angle2+angle3; 
-// console.log(sum);
+console.log(sum);
 return sum;
 }
 // doubt 2 console not printing sum value but in video it is working
