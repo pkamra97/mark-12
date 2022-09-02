@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-triangle</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Fun with Triangles</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-style-inline">
+                <a class="link " href="/index.html">IS-Triangle</a>
+            </li>
+            <li class="list-style-inline">
+                <a class ="link " href="/area.html">Area</a>
+            </li>
+            <li class="list-style-inline">
+                <a class="link " href="/hypotenuse.html">Hypotenuse</a>
+            </li>
+            <li class="list-style-inline">
+                <a class ="link link-active" href="/quiz.html">Quiz</a>
+            </li>
+            
+        </ul>
+    </nav>
     <h1>Triangle-quiz</h1>
     <form class="quiz-form">
         <div class="ques-container">
@@ -17,7 +39,7 @@
             <label><input type="radio" name="question1" value="90°" />90°</label>
         </div>
         <div class="ques-container">
-            <p>If a triangle has an angle of 90° then what is it called??</p>
+            <p class="ques">If a triangle has an angle of 90° then what is it called??</p>
             <label><input type="radio" name="question2" value="acute" />Acute </label>
             <label><input type="radio" name="question2" value="obtuse" />Obtuse </label>
             <label><input type="radio" name="question2" value="right angled" />Right-angled</label>
@@ -25,12 +47,25 @@
 
     </form>
     <button id="answer-btn">Submit answers</button>
-    <div id="output">Output</div>
+    <div class="output" id="output">Output</div>
     <script src="/quiz.js"></script>
-</head>
 
-<body>
+    <footer class="footer">
+        <div class="footer-header"> Connect with me on <strong>Social media</strong>
+            <ul class="list-non-bullet">
+                <li class="list-style-inline">
+                    <a class="link" href="linkedin address">linkedin</a>
+                </li>
+                <li class="list-style-inline">
+                    <a class="link" href="twitter address">twitter</a>
+                </li>
+                <li class="list-style-inline">
+                    <a class="link" href="github adddress">github</a>
+                </li>
+            </ul>
+        </div>
 
+    </footer>
 </body>
 
 </html>
