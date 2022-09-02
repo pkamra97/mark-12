@@ -28,10 +28,10 @@
             
         </ul>
     </nav>
-    <h1>Triangle-quiz</h1>
+    <h1><u>Triangle-quiz</u></h1>
     <form class="quiz-form">
         <div class="ques-container">
-            <p>What is the 3rd angle for a triangle with angle1=45
+            <p>1. What is the 3rd angle for a triangle with angle1=45
                 , angle2=45 ???
             </p>
             <label><input type="radio" name="question1" value="45°" />45°</label>
@@ -39,33 +39,62 @@
             <label><input type="radio" name="question1" value="90°" />90°</label>
         </div>
         <div class="ques-container">
-            <p class="ques">If a triangle has an angle of 90° then what is it called??</p>
+            <p class="ques">2. If a triangle has an angle of 90° then what is it called??</p>
             <label><input type="radio" name="question2" value="acute" />Acute </label>
             <label><input type="radio" name="question2" value="obtuse" />Obtuse </label>
             <label><input type="radio" name="question2" value="right angled" />Right-angled</label>
         </div>
+        <div class="ques-container">
+            <p class="ques">3. A triangle can have</p>
+            <label><input type="radio" name="question3" value="one right angle" />one right angle</label>
+            <label><input type="radio" name="question3" value="two right angles" />two right angles</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">4. Which of the following can form a right angled triangle?</p>
+            <label><input type="radio" name="question4" value="14" />14, 15, 26</label>
+            <label><input type="radio" name="question4" value="12" />12, 16, 20</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">5. Which of the following triangles are always similar?</p>
+            <label><input type="radio" name="question5" value="e" />Equilateral triangle</label>
+            <label><input type="radio" name="question5" value="i" />Isosceles triangle</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">6. If one angle of a triangle is obtuse, then which one of the following is the possible measure of remaining angles?
+            </p>
+            <label><input type="radio" name="question6" value="100" />100°</label>
+            <label><input type="radio" name="question6" value="85" />85°</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">7. If the largest angle in a triangle is 70°, what is the least possible value of the smallest angle of the triangle??
+            </p>
+            <label><input type="radio" name="question7" value="30" />30°</label>
+            <label><input type="radio" name="question7" value="10" />10°</label>
+        </div>
+        <div class="ques-container">
+             <p class="ques">8. The perimeter of scalene triangle with sides a, b, c is</p>
+            <label><input type="radio" name="question8" value="a" />a + b + c</label>
+            <label><input type="radio" name="question8" value="b" />2a</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">9. A scalene triangle has ___ lines of symmetry</p>
+            <label><input type="radio" name="question9" value="a" />Two</label>
+            <label><input type="radio" name="question9" value="b" />no</label>
+            <label><input type="radio" name="question9" value="c" />15</label>
+        </div>
+        <div class="ques-container">
+            <p class="ques">10. There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
+            <label><input type="radio" name="question10" value="a" />85° </label>
+            <label><input type="radio" name="question10" value="b" />65° </label>
+            <label><input type="radio" name="question10" value="c" />45° </label>
+        </div>
+
 
     </form>
-    <button id="answer-btn">Submit answers</button>
+    <button class="link-primary" id="answer-btn">Submit answers</button>
     <div class="output" id="output"></div>
     <script src="/quiz.js"></script>
 
-    <footer class="footer">
-        <div class="footer-header"> Connect with me on <strong>Social media</strong>
-            <ul class="list-non-bullet">
-                <li class="list-style-inline">
-                    <a class="link" href="linkedin address">linkedin</a>
-                </li>
-                <li class="list-style-inline">
-                    <a class="link" href="twitter address">twitter</a>
-                </li>
-                <li class="list-style-inline">
-                    <a class="link" href="github adddress">github</a>
-                </li>
-            </ul>
-        </div>
-
-    </footer>
 </body>
 
 </html>
