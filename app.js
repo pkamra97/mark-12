@@ -6,25 +6,19 @@ const outputE1=document.querySelector("#output")
 console.log(inputs);
 console.log(inputs[0]);
 function calculateSum(angle1,angle2,angle3)
-{
- if(angle1 > 0 && angle2 > 0 && angle3 > 0 )
-  {
-     const sum=angle1+angle2+angle3; 
+{    const sum=angle1+angle2+angle3; 
      console.log(sum);
      return sum;
-  }
-  else{
-    console.log("Please enter values > zero(0)");
-    outputE1.innerText="Please enter values > zero(0)";
-  }
 }
 // doubt 2 console not printing sum value but in video it is working
 
 function isTriangle(){
 // const total=calculateSum(45,45,90);
 // console.log(inputs[0].value,inputs[1].value,inputs[2].value);
-if(Number(inputs[0].value) && Number(inputs[1].value) && Number(inputs[2].value)){
-const total=calculateSum(Number(inputs[0].value) , Number(inputs[1].value) , Number(inputs[2].value));
+if(Number(inputs[0].value) > 0 && Number(inputs[1].value) > 0 && Number(inputs[2].value) >0)
+// if(Number(inputs[0].value) && Number(inputs[1].value) && Number(inputs[2].value))
+{
+   const total=calculateSum(Number(inputs[0].value) , Number(inputs[1].value) , Number(inputs[2].value));
 // console.log(total);
 // also not working in console.
 
@@ -46,7 +40,7 @@ const total=calculateSum(Number(inputs[0].value) , Number(inputs[1].value) , Num
 }
 else{
 
-    outputE1.innerText="Please fill all values";
+    outputE1.innerText="Please fill all values and Enter only Positive values";
 
 }
 
