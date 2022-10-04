@@ -11,6 +11,7 @@ return sos;
 
 function cal_Hypotenuse()
 {
+    if(sides[0].value>0 && sides[1].value>0){
     console.log("Neograds incoming");
 
     //Doubt this worked even without typecasting then why are we doing type casting
@@ -18,6 +19,10 @@ function cal_Hypotenuse()
     const hypto=Math.sqrt(sum);
     // console.log(hypto);
     outputE1.innerText="The length of hypotenuse is " +hypto;
+    }
+    else{
+        outputE1.innerText="Enter both values and Poitive values";
+    }
 }
 
 hypBtn.addEventListener('click',cal_Hypotenuse);

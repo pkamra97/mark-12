@@ -13,9 +13,14 @@ return prd;
 
 function area()
 {
+    if(inputOne.value>0 && inputTwo.value>0){
     const area=(product(inputOne.value , inputTwo.value )/2);
     console.log(area);
     output.innerText="Area of triangle is "+area;
+    }
+    else{
+        output.innerText="Enter Both values and fill positive numbers only"
+    }
 }
 
 calBtn.addEventListener('click', area );
